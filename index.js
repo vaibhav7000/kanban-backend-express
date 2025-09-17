@@ -1,3 +1,11 @@
-// run `node index.js` in the terminal
+import Express from "express";
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const app = Express();
+const port = 3000;
+
+
+app.listen(port, function() {
+    console.log("server is started");
+})
+
+
